@@ -1,0 +1,50 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+import random
+choices= [rock,paper,scissors]
+user=int( input("Type 0 for rock, 1 for paper, 2 for scissors\n"))
+print(f"You choose{choices[user]}")
+computer= random.randint(0,2)
+computer_int= int(computer)
+print(f"Computer chooses:{choices[computer_int]}")
+
+if user == 0 and computer_int == 2:
+  print("You win!")
+elif user == 1 and computer_int == 0:
+  print("you win")
+elif user == 2 and computer_int == 1:
+  print("You win")
+elif user == 0 and computer_int == 1:
+  print("Computer wins!")
+elif user == 1 and computer_int == 2:
+  print("Computer wins!")
+elif user == 2 and computer_int == 1:
+  print("Computer wins")
+else:
+  print("It is a  tie!")
