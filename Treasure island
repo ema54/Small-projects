@@ -1,0 +1,18 @@
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+
+print("You are at a cross road which way do you want to go?")
+way= input("Type left or right:").lower()
+if way == "right":
+  print("You fell into a hole,you are dead. Mission failed!")
+elif way == "left":
+  left_side= input("You went left and the road took you to a frozen lake, what would you like to do? Walk across or go around?").lower()
+if left_side == "walk across":
+  print("The ice breaked, you fell and died. Mission failed!")
+elif left_side == "go around":
+  across_lake =input("You went around the lake and you are facing the wolves now. What do you want to do? Run back , or hide?").lower()
+if across_lake == "run back":
+  print("The wolves catch you, and you die. Mission failed!")
+elif across_lake == "hide":
+  print("You were lucky. Great job , you found the treasure! Game over.")
